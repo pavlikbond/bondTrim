@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Expert finish carpentry services in the Twin Cities. Specializing in trim work, custom railings, cabinet installation, doors, and wainscoting. Serving Savage, MN and surrounding areas." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Bond Trim LLC" />
+    <meta name="keywords" content="finish carpentry, trim work, custom railings, cabinet installation, doors, wainscoting, Twin Cities, Minnesota, Savage" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bondtrimllc.com" />
+    <meta property="og:image" content="/og-image.jpg" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+
+  </head>
+  <body class="bg-background-600 text-gray-900">
+    <slot />
+  </body>
+</html> 

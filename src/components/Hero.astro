@@ -1,0 +1,69 @@
+---
+// Hero section component
+---
+
+<section id="home" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background-50 via-background-100 to-primary-50 pt-20">
+
+  <div class="container-custom section-padding relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Content -->
+      <div class="text-center lg:text-left">
+        <div class="flex justify-center mb-8">
+          <img src="/logo-black.png" alt="Bond Trim LLC Logo" class="h-40 w-auto" />
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          Professional 
+          <span class="text-primary-600">Finish Carpentry</span>
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-gray-600 mb-8 font-medium">
+          Expert craftsmanship for your home in the Twin Cities
+        </p>
+        
+        <p class="text-lg text-gray-600 mb-10 leading-relaxed">
+          Bond Trim LLC delivers exceptional finish carpentry services throughout the Twin Cities Metro area. 
+          From custom trim work to elegant railings, we bring precision and artistry to every project.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <a href="#contact" class="btn-primary text-lg px-8 py-4">
+            <i class="fas fa-calculator mr-2"></i>
+            Get Free Quote
+          </a>
+          <a href="#services" class="btn-secondary text-lg px-8 py-4">
+            <i class="fas fa-tools mr-2"></i>
+            Our Services
+          </a>
+        </div>
+        
+
+      </div>
+      
+      <!-- Image -->
+      <div class="relative">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+          <img 
+            src="https://images.pexels.com/photos/5089178/pexels-photo-5089178.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+            alt="Professional finish carpentry work" 
+            class="w-full h-full object-cover aspect-[3/4]"
+          />
+          <!-- Overlay with company info -->
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+            <div class="text-white">
+              <p class="font-semibold text-lg">Bond Trim LLC</p>
+              <p class="text-sm opacity-90">Savage, Minnesota</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <a href="#services" class="text-gray-400 hover:text-primary-600 transition-colors">
+      <i class="fas fa-chevron-down text-2xl"></i>
+    </a>
+  </div>
+</section> 
