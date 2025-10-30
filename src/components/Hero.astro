@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import image3 from '../assets/image3.webp';
 // Hero section component
 ---
 
@@ -43,11 +45,11 @@
       <!-- Image -->
       <div class="relative">
         <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-          <img 
-            src="https://images.pexels.com/photos/5089178/pexels-photo-5089178.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-            alt="Professional finish carpentry work" 
-            class="w-full h-full object-cover aspect-[3/4]"
-          />
+                     <Image 
+             src={image3}
+             alt="Professional finish carpentry work" 
+             class="w-full h-full object-cover aspect-[3/4]"
+           />
           <!-- Overlay with company info -->
           <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
             <div class="text-white">
